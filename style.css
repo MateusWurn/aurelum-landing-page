@@ -110,3 +110,44 @@ h1 {
   outline: 3px solid #292722;
   outline-offset: 4px;
 }
+
+.solucoes {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.solucoes h2 {
+  margin: 0 0 32px;
+  font-size: 32px;
+}
+
+.solucoes-grade {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.solucao {
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #ded5c3;
+  border-radius: 12px;
+}
+
+.solucao h3 {
+  margin: 0 0 12px;
+  color: #856322;
+  font-size: 22px;
+}
+
+.solucao p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .solucoes-grade {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
