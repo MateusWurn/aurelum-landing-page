@@ -151,3 +151,78 @@ h1 {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.menu a {
+  color: #292722;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 0;
+  align-items: center;
+}
+.menu a.menu-contato {
+  padding: 12px 20px;
+  border: 2px solid #856322;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #856322;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu a.menu-contato:hover {
+  background-color: #eee5d3;
+  color: #856322;
+  text-decoration: none;
+}
+
+.processo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.processo h2 {
+  margin: 0 0 32px;
+  font-size: 32px;
+}
+
+.processo-etapas {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  margin: 0;
+  padding-left: 28px;
+}
+
+.processo-etapas li {
+  padding-left: 8px;
+}
+
+.processo-etapas li::marker {
+  color: #856322;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.processo-etapas h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.processo-etapas p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .processo-etapas {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+}

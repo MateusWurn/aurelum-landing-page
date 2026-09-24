@@ -5,12 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aurelon | Automação residencial</title>
+  <title>Aurelum | Automação residencial</title>
 </head>
 <body>
   <header class="cabecalho">
-  <h1>Aurelon</h1>
-  <p>Automação residencial em Curitiba</p>
+    <h1>Aurelum</h1>
+    <nav class="menu" aria-label="Menu principal">
+        <a href="#solucoes">Nossas soluções</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a class="menu-contato" href="https://wa.me/5541987358113">
+          Fale conosco
+          </a>
+      </nav>
+
   </header>
 
   <main>
@@ -18,16 +25,8 @@
           <div class="apresentacao-texto">
         <h2>Automação invisível, mas que você sente.</h2>
         <p>Conheça nossas soluções de automação residencial.</p>
-      </div>
 
-      <img
-        class="apresentacao-imagem"
-        src="imagens/aurelum-sala.png"
-        alt="Ambiente ilustrativo de sala com iluminação indireta, cortinas claras e vista para um jardim."
-        width="1536"
-        height="1024"
-      >
-          <div class="acoes">
+        <div class="acoes">
             <a
         class="botao"
         href="https://wa.me/5541987358113?text=Ol%C3%A1%21%20Gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20automa%C3%A7%C3%A3o%20residencial."
@@ -41,9 +40,19 @@
       >
         Conhecer nosso Instagram
       </a>
-    </div>
+        </div>
+      </div>
+
+      <img
+        class="apresentacao-imagem"
+        src="imagens/aurelum-sala.png"
+        alt="Ambiente ilustrativo de sala com iluminação indireta, cortinas claras e vista para um jardim."
+        width="1536"
+        height="1024"
+      >
+          
     </section>
-    <section class="solucoes" aria-labelledby="titulo-solucoes">
+    <section class="solucoes" aria-labelledby="titulo-solucoes" id="solucoes">
   <h2 id="titulo-solucoes">Soluções para sua casa</h2>
 
   <div class="solucoes-grade">
@@ -79,7 +88,42 @@
       </p>
     </article>
   </div>
-</section>
+  </section>
+  <section
+    id="como-funciona"
+    class="processo"
+    aria-labelledby="titulo-processo"
+  >
+    <h2 id="titulo-processo">Como funciona</h2>
+
+    <ol class="processo-etapas">
+      <li>
+        <h3>Conte sobre seu projeto</h3>
+        <p>
+          Compartilhe suas necessidades e envie plantas ou
+          o projeto luminotécnico, se já tiver.
+          Nosso primeiro contato pode ser feito à distância.
+        </p>
+      </li>
+
+      <li>
+        <h3>Receba uma proposta</h3>
+        <p>
+          Analisamos as informações para preparar uma solução
+          para você. Quando uma avaliação no local for necessária,
+          combinamos uma visita técnica.
+        </p>
+      </li>
+
+      <li>
+        <h3>Veja sua automação funcionar</h3>
+        <p>
+          Após a aprovação da proposta, agendamos a instalação
+          e a configuração dos sistemas contratados.
+        </p>
+      </li>
+    </ol>
+  </section>
   </main>
 </body>
 </html>
