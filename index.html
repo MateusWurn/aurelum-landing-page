@@ -4,27 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aurelum | Automação residencial</title>
 </head>
 <body>
-  <header class="cabecalho">
-    <h1>Aurelum</h1>
-    <nav class="menu" aria-label="Menu principal">
+      <header class="cabecalho">
+        <h1 class="marca">
+        <span class="marca-nome">Aurelum</span>
+        <span class="marca-assinatura">Automação residencial</span>
+        </h1>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="menu-principal"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav id="menu-principal" class="menu" aria-label="Menu principal">
         <a href="#solucoes">Nossas soluções</a>
         <a href="#como-funciona">Como funciona</a>
+        <a href="#duvidas">Dúvidas comuns</a>
         <a class="menu-contato" href="https://wa.me/5541987358113">
           Fale conosco
-          </a>
+        </a>
       </nav>
-
-  </header>
+    </header>
 
   <main>
       <section class="apresentacao">
           <div class="apresentacao-texto">
-        <h2>Automação invisível, mas que você sente.</h2>
-        <p>Conheça nossas soluções de automação residencial.</p>
+            <h2>Automação invisível, mas que você sente.</h2>
+          <p>
+            Iluminação, cortinas, som e conectividade pensados
+            para sua rotina. Automação residencial em Curitiba.
+          </p>
 
         <div class="acoes">
             <a
@@ -35,10 +55,10 @@
       </a>
 
       <a
-        class="botao botao-secundario"
+        class="link-instagram"
         href="https://www.instagram.com/aurelum.solutions/"
       >
-        Conhecer nosso Instagram
+        Instagram
       </a>
         </div>
       </div>
@@ -124,6 +144,95 @@
       </li>
     </ol>
   </section>
+      <section class="duvidas" id="duvidas" aria-labelledby="titulo-duvidas">
+  <h2 id="titulo-duvidas">Dúvidas comuns</h2>
+
+  <p class="duvidas-introducao">
+    Entenda como a automação pode fazer parte da sua rotina.
+  </p>
+
+  <details>
+    <summary>Preciso ter um projeto pronto para começar?</summary>
+    <p>
+      Não. Tudo começa com uma conversa sobre sua casa e
+      o que você deseja facilitar no dia a dia. Se já tiver
+      plantas ou um projeto luminotécnico, podemos aproveitar
+      esse material para planejar a solução.
+    </p>
+  </details>
+
+  <details>
+    <summary>Minha casa continua automatizada se a internet cair?</summary>
+    <p>
+      Sim. Nos sistemas configurados para controle local,
+      você continua comandando sua casa pelo aplicativo,
+      mesmo sem conexão com a internet. Basta que a rede local,
+      a central e os equipamentos estejam funcionando e com energia.
+    </p>
+    <p>
+      A internet é necessária para recursos online, como
+      comandos de voz pela Alexa e acesso remoto quando
+      você está fora de casa.
+    </p>
+  </details>
+
+  <details>
+    <summary>É preciso uma visita técnica para receber um orçamento?</summary>
+    <p>
+      Podemos começar à distância, tornando o atendimento
+      mais prático. Com suas informações, plantas ou projeto
+      luminotécnico, avaliamos a possibilidade de preparar
+      a proposta sem uma visita inicial.
+    </p>
+    <p>
+      Se uma avaliação no local for necessária, combinamos
+      essa etapa com você.
+    </p>
+  </details>
+
+  <details>
+    <summary>O que posso automatizar com a Aurelum?</summary>
+    <p>
+      Iluminação, tomadas, cortinas e motores compatíveis
+      com seu projeto. Também oferecemos redes de alto
+      desempenho e som ambiente para tornar sua casa
+      mais conectada, confortável e prática.
+    </p>
+  </details>
+
+  <details>
+    <summary>Como dou o primeiro passo?</summary>
+    <p>
+      Conte pelo WhatsApp o que você gostaria de automatizar.
+      Vamos entender suas necessidades e conversar sobre
+      as possibilidades para sua casa.
+    </p>
+
+    <a
+      class="duvidas-contato"
+      href="https://wa.me/5541987358113?text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20automa%C3%A7%C3%A3o%20residencial."
+    >
+      Conversar com a Aurelum
+    </a>
+  </details>
+</section>
+   <footer class="rodape">
+  <div class="rodape-texto">
+      <p class="rodape-marca">AURELUM</p>
+      <h2>Sua casa pode trabalhar a seu favor.</h2>
+      <p>
+        Conte o que você imagina.
+        Vamos conversar sobre as possibilidades para sua casa.
+      </p>
+    </div>
+
+    <a
+      class="botao"
+      href="https://wa.me/5541987358113?text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20automa%C3%A7%C3%A3o%20residencial."
+    >
+      Conversar com a Aurelum
+    </a>
+  </footer>
   </main>
 </body>
 </html>
